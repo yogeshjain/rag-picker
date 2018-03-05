@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yogesh.ragpicker.view.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/img_temp_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/strut"/>
+
+    <!--<com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/strut"
+        app:fillColor="#FFe6e6e6"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />-->
+
+    <ImageView
+        android:id="@+id/img_temp_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/strut"/>
+
+    <!--<com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/strut"
+        app:fillColor="#FFa6a6a6"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_shuffle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_cached_white_48dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_fav"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_favorite_white_24dp"
+        app:backgroundTint="#E6E6E6"
+        android:tint="@color/grey"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_top"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_add_circle_outline_white_48dp"
+        app:backgroundTint="#E6E6E6"
+        android:tint="@color/grey"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_bot"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_add_circle_outline_white_48dp"
+        app:backgroundTint="#E6E6E6"
+        android:tint="@color/grey"/>
+
+    <Button
+        android:id="@+id/btn_top_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fab_add_top"
+        android:layout_marginTop="36dp"
+        android:text="&gt;" />
+
+    <Button
+        android:id="@+id/btn_top_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_top_next"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="&lt;" />
+
+    <Button
+        android:id="@+id/btn_bot_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_add_bot"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="36dp"
+        android:text="&gt;" />
+
+    <Button
+        android:id="@+id/btn_bot_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_bot_next"
+        android:layout_toEndOf="@+id/strut"
+        android:layout_toRightOf="@+id/strut"
+        android:text="&lt;" />
+
+</RelativeLayout>
