@@ -1,2 +1,2 @@
-# rag-picker
-Wardrobe suggestion application
+# Rag Picker
+Wardrobe suggestion android application.
